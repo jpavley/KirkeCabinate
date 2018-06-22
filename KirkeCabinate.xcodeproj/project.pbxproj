@@ -11,7 +11,21 @@
 		485E3E0520DC79D90090BD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485E3E0320DC79D90090BD2B /* Main.storyboard */; };
 		485E3E0720DC79DB0090BD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485E3E0620DC79DB0090BD2B /* Assets.xcassets */; };
 		485E3E0A20DC79DB0090BD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485E3E0820DC79DB0090BD2B /* LaunchScreen.storyboard */; };
+		4862066220DD35160013546C /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862066120DD35160013546C /* Drug.swift */; };
+		4862066A20DD48930013546C /* KirkeCabinateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862066920DD48930013546C /* KirkeCabinateTests.swift */; };
+		4862067120DD48A00013546C /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862066120DD35160013546C /* Drug.swift */; };
+		4862067320DD48D10013546C /* KirkeDrugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862067220DD48D10013546C /* KirkeDrugTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4862066C20DD48930013546C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 485E3DF420DC79D90090BD2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 485E3DFB20DC79D90090BD2B;
+			remoteInfo = KirkeCabinate;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		485E3DFC20DC79D90090BD2B /* KirkeCabinate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KirkeCabinate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +34,22 @@
 		485E3E0620DC79DB0090BD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		485E3E0920DC79DB0090BD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		485E3E0B20DC79DB0090BD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4862066120DD35160013546C /* Drug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drug.swift; sourceTree = "<group>"; };
+		4862066720DD48930013546C /* KirkeCabinateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KirkeCabinateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4862066920DD48930013546C /* KirkeCabinateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KirkeCabinateTests.swift; sourceTree = "<group>"; };
+		4862066B20DD48930013546C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4862067220DD48D10013546C /* KirkeDrugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KirkeDrugTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		485E3DF920DC79D90090BD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4862066420DD48930013546C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				485E3DFE20DC79D90090BD2B /* KirkeCabinate */,
+				4862066820DD48930013546C /* KirkeCabinateTests */,
 				485E3DFD20DC79D90090BD2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				485E3DFC20DC79D90090BD2B /* KirkeCabinate.app */,
+				4862066720DD48930013546C /* KirkeCabinateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,6 +80,9 @@
 		485E3DFE20DC79D90090BD2B /* KirkeCabinate */ = {
 			isa = PBXGroup;
 			children = (
+				4862066020DD34B30013546C /* Models */,
+				4862065F20DD34A90013546C /* Views */,
+				4862065E20DD349E0013546C /* Controllers */,
 				485E3DFF20DC79D90090BD2B /* AppDelegate.swift */,
 				485E3E0320DC79D90090BD2B /* Main.storyboard */,
 				485E3E0620DC79DB0090BD2B /* Assets.xcassets */,
@@ -59,6 +90,38 @@
 				485E3E0B20DC79DB0090BD2B /* Info.plist */,
 			);
 			path = KirkeCabinate;
+			sourceTree = "<group>";
+		};
+		4862065E20DD349E0013546C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4862065F20DD34A90013546C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4862066020DD34B30013546C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4862066120DD35160013546C /* Drug.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4862066820DD48930013546C /* KirkeCabinateTests */ = {
+			isa = PBXGroup;
+			children = (
+				4862067220DD48D10013546C /* KirkeDrugTests.swift */,
+				4862066920DD48930013546C /* KirkeCabinateTests.swift */,
+				4862066B20DD48930013546C /* Info.plist */,
+			);
+			path = KirkeCabinateTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +144,24 @@
 			productReference = 485E3DFC20DC79D90090BD2B /* KirkeCabinate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4862066620DD48930013546C /* KirkeCabinateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4862066E20DD48930013546C /* Build configuration list for PBXNativeTarget "KirkeCabinateTests" */;
+			buildPhases = (
+				4862066320DD48930013546C /* Sources */,
+				4862066420DD48930013546C /* Frameworks */,
+				4862066520DD48930013546C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4862066D20DD48930013546C /* PBXTargetDependency */,
+			);
+			name = KirkeCabinateTests;
+			productName = KirkeCabinateTests;
+			productReference = 4862066720DD48930013546C /* KirkeCabinateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +174,10 @@
 				TargetAttributes = {
 					485E3DFB20DC79D90090BD2B = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					4862066620DD48930013546C = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 485E3DFB20DC79D90090BD2B;
 					};
 				};
 			};
@@ -110,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				485E3DFB20DC79D90090BD2B /* KirkeCabinate */,
+				4862066620DD48930013546C /* KirkeCabinateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +211,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4862066520DD48930013546C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -133,10 +226,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				485E3E0020DC79D90090BD2B /* AppDelegate.swift in Sources */,
+				4862066220DD35160013546C /* Drug.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4862066320DD48930013546C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4862066A20DD48930013546C /* KirkeCabinateTests.swift in Sources */,
+				4862067320DD48D10013546C /* KirkeDrugTests.swift in Sources */,
+				4862067120DD48A00013546C /* Drug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4862066D20DD48930013546C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 485E3DFB20DC79D90090BD2B /* KirkeCabinate */;
+			targetProxy = 4862066C20DD48930013546C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		485E3E0320DC79D90090BD2B /* Main.storyboard */ = {
@@ -308,6 +420,46 @@
 			};
 			name = Release;
 		};
+		4862066F20DD48930013546C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QZ7SMYA7GB;
+				INFOPLIST_FILE = KirkeCabinateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Epic-Loot.KirkeCabinateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KirkeCabinate.app/KirkeCabinate";
+			};
+			name = Debug;
+		};
+		4862067020DD48930013546C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QZ7SMYA7GB;
+				INFOPLIST_FILE = KirkeCabinateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Epic-Loot.KirkeCabinateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KirkeCabinate.app/KirkeCabinate";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +477,15 @@
 			buildConfigurations = (
 				485E3E0F20DC79DB0090BD2B /* Debug */,
 				485E3E1020DC79DB0090BD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4862066E20DD48930013546C /* Build configuration list for PBXNativeTarget "KirkeCabinateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4862066F20DD48930013546C /* Debug */,
+				4862067020DD48930013546C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
