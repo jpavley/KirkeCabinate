@@ -30,4 +30,25 @@ class KirkeDrugTests: XCTestCase {
         let expectedString = "Metformin 500.0 MG tablet"
         XCTAssertEqual(drugUT.description, expectedString, "Drug description malformed")
     }
+    
+    func testLoadFromDataFile() {
+        
+        let drugsUT = Drug.loadDrugs()
+        XCTAssertNotNil(drugsUT, "Drug list was not loaded")
+        XCTAssertEqual(drugsUT.count, 3, "Drug data is missing from list")
+    }
+    
+    func testLoadedDrugsHaveData() {
+
+        let drugsUT = Drug.loadDrugs()
+
+        // First 3 rows are test drugs
+        let expectedString1 = "Longbottom Leaf 500.0 MG tablet"
+        let expectedString2 = "Unicorn Vitamins 10.0 MCG liquid"
+        let expectedString3 = "Love Potion 3.0 ML injection"
+
+        XCTAssertEqual(drugsUT[0].description, expectedString1, "Drug description 1 malformed")
+        XCTAssertEqual(drugsUT[1].description, expectedString2, "Drug description 2 malformed")
+        XCTAssertEqual(drugsUT[2].description, expectedString3, "Drug description 3 malformed")
+    }
 }

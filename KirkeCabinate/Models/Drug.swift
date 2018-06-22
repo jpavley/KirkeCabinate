@@ -21,7 +21,7 @@ class Drug {
         case strength = "strength"
         case form = "form"
         case bundleFile = "Drug_Data"
-        case bundleType = "pList"
+        case bundleType = "plist"
     }
     
     /// The form of this drug, tablet, suspension, injection, etc...
@@ -100,14 +100,14 @@ class Drug {
         
         if
             let name = dictionary[DrugKey.name.rawValue] as? String,
-            let units = dictionary[DrugKey.units.rawValue] as? DrugUnit,
+            let units = dictionary[DrugKey.units.rawValue] as? Int,
             let strength = dictionary[DrugKey.strength.rawValue] as? Double,
-            let form = dictionary[DrugKey.form.rawValue] as? DrugForm {
+            let form = dictionary[DrugKey.form.rawValue] as? Int {
             
             self.init(name: name,
-                      units: units,
+                      units: DrugUnit(rawValue: units)!,
                       strength: strength,
-                      form: form)
+                      form: DrugForm(rawValue: form)!)
             
         } else {
             

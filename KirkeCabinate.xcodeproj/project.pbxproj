@@ -15,6 +15,7 @@
 		4862066A20DD48930013546C /* KirkeCabinateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862066920DD48930013546C /* KirkeCabinateTests.swift */; };
 		4862067120DD48A00013546C /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862066120DD35160013546C /* Drug.swift */; };
 		4862067320DD48D10013546C /* KirkeDrugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862067220DD48D10013546C /* KirkeDrugTests.swift */; };
+		4862067520DD4C000013546C /* Drug_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4862067420DD4C000013546C /* Drug_Data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		4862066920DD48930013546C /* KirkeCabinateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KirkeCabinateTests.swift; sourceTree = "<group>"; };
 		4862066B20DD48930013546C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4862067220DD48D10013546C /* KirkeDrugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KirkeDrugTests.swift; sourceTree = "<group>"; };
+		4862067420DD4C000013546C /* Drug_Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Drug_Data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				4862066120DD35160013546C /* Drug.swift */,
+				4862067420DD4C000013546C /* Drug_Data.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4862067520DD4C000013546C /* Drug_Data.plist in Resources */,
 				485E3E0A20DC79DB0090BD2B /* LaunchScreen.storyboard in Resources */,
 				485E3E0720DC79DB0090BD2B /* Assets.xcassets in Resources */,
 				485E3E0520DC79D90090BD2B /* Main.storyboard in Resources */,

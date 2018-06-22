@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Longbottom Leaf</string>
+		<key>units</key>
+		<integer>1</integer>
+		<key>strength</key>
+		<integer>500</integer>
+		<key>form</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Unicorn Vitamins</string>
+		<key>units</key>
+		<integer>2</integer>
+		<key>strength</key>
+		<integer>10</integer>
+		<key>form</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Love Potion</string>
+		<key>units</key>
+		<integer>3</integer>
+		<key>strength</key>
+		<integer>3</integer>
+		<key>form</key>
+		<integer>3</integer>
+	</dict>
+</array>
+</plist>
