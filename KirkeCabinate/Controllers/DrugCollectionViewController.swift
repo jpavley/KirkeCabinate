@@ -15,6 +15,11 @@ class DrugCollectionViewController: UICollectionViewController {
     
     let DrugData = Drug.loadDrugs()
     
+    let columns: CGFloat = 2.0
+    let inset: CGFloat = 8.0
+    let spacing: CGFloat = 8.0
+    let lineSpacing: CGFloat = 4.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,3 +59,26 @@ extension DrugCollectionViewController {
         return drugCell
     }
 }
+
+extension DrugCollectionViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        //        let width = Int((collectionView.frame.width / columns) - (inset + spacing))
+        let width = Int((collectionView.frame.width / columns) - (inset))
+        return CGSize(width: width, height: width)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
+    }
+    
+    //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    //        return spacing
+    //    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return lineSpacing
+    }
+    
+}
+

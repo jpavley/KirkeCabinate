@@ -15,46 +15,48 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="q2u-3t-tIq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rQ5-1D-zym">
-                            <size key="itemSize" width="240" height="270"/>
+                            <size key="itemSize" width="240" height="240"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DrugCell" id="FQI-l9-ba5" customClass="DrugCollectionViewCell" customModule="KirkeCabinate" customModuleProvider="target">
-                                <rect key="frame" x="40" y="0.0" width="240" height="270"/>
+                                <rect key="frame" x="40" y="0.0" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="270"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3q-bs-9UY" customClass="Pill" customModule="KirkeCabinate" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXX-XI-7fq">
+                                                    <rect key="frame" x="0.0" y="219.5" width="240" height="20.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.31592465753424659" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="240" id="2vH-sX-Zxl"/>
-                                                <constraint firstAttribute="height" constant="240" id="B1E-Sj-8ta"/>
+                                                <constraint firstItem="oXX-XI-7fq" firstAttribute="leading" secondItem="Z3q-bs-9UY" secondAttribute="leading" id="DUQ-tz-MH3"/>
+                                                <constraint firstAttribute="trailing" secondItem="oXX-XI-7fq" secondAttribute="trailing" id="SPh-3g-sJC"/>
+                                                <constraint firstAttribute="bottom" secondItem="oXX-XI-7fq" secondAttribute="bottom" id="ZMW-oi-Be1"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXX-XI-7fq">
-                                            <rect key="frame" x="0.0" y="250.5" width="240" height="19.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
                                     <constraint firstItem="Z3q-bs-9UY" firstAttribute="top" secondItem="FQI-l9-ba5" secondAttribute="top" id="Gfe-Lt-x2G"/>
-                                    <constraint firstAttribute="bottom" secondItem="oXX-XI-7fq" secondAttribute="bottom" id="J44-um-1Kc"/>
-                                    <constraint firstAttribute="trailing" secondItem="oXX-XI-7fq" secondAttribute="trailing" id="YBL-uY-MNQ"/>
                                     <constraint firstAttribute="trailing" secondItem="Z3q-bs-9UY" secondAttribute="trailing" id="Ycn-zH-ZQJ"/>
-                                    <constraint firstItem="oXX-XI-7fq" firstAttribute="leading" secondItem="FQI-l9-ba5" secondAttribute="leading" id="jLm-Gl-gd5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z3q-bs-9UY" secondAttribute="bottom" id="pFL-Nc-xAe"/>
                                     <constraint firstItem="Z3q-bs-9UY" firstAttribute="leading" secondItem="FQI-l9-ba5" secondAttribute="leading" id="rwF-ug-hgy"/>
                                 </constraints>
-                                <size key="customSize" width="240" height="270"/>
+                                <size key="customSize" width="240" height="240"/>
                                 <connections>
                                     <outlet property="pillLabel" destination="oXX-XI-7fq" id="cYQ-wV-xuu"/>
                                     <outlet property="pillView" destination="Z3q-bs-9UY" id="gZj-aK-I4F"/>

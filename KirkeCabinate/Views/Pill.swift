@@ -16,6 +16,13 @@ class Pill: UIView {
     }
     
     var state: PillState = .ready
+    
+    let canvasSize: CGFloat = 240.0
+    
+    func calcScaleFactor(viewWidth: CGFloat) -> CGFloat {
+        let scaleFactor: CGFloat = viewWidth/canvasSize
+        return scaleFactor
+    }
 
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -30,6 +37,9 @@ class Pill: UIView {
         // enable the following lines for flipped coordinate systems
         // ctx.translateBy(x: 0, y: self.bounds.size.height)
         // ctx.scaleBy(x: 1, y: -1)
+        
+        let scaleFactor: CGFloat = calcScaleFactor(viewWidth: self.bounds.width)
+        ctx.scaleBy(x: scaleFactor, y: scaleFactor)
         
         /*  Shape   */
         let pathRef = CGMutablePath()
