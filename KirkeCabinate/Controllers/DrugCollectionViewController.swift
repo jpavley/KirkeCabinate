@@ -54,7 +54,8 @@ extension DrugCollectionViewController {
         // Configure the cell
         let drug = DrugData[indexPath.item]
         drugCell.pillLabel.text = "\(drug)"
-        drugCell.pillView.state = indexPath.item % 2 == 0 ? .taken : .missed
+        let pillStates: [Pill.PillState] = [.taken, .missed, .ready]
+        drugCell.pillView.state = pillStates.randomElement()!
     
         return drugCell
     }
@@ -64,7 +65,6 @@ extension DrugCollectionViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = Int((collectionView.frame.width / columns) - (inset + spacing))
-        //let width = Int((collectionView.frame.width / columns) - (inset))
         return CGSize(width: width, height: width)
     }
     
