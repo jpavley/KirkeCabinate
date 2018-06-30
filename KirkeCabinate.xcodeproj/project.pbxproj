@@ -17,6 +17,8 @@
 		4862067120DD48A00013546C /* Drug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862066120DD35160013546C /* Drug.swift */; };
 		4862067320DD48D10013546C /* KirkeDrugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4862067220DD48D10013546C /* KirkeDrugTests.swift */; };
 		4862067520DD4C000013546C /* Drug_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4862067420DD4C000013546C /* Drug_Data.plist */; };
+		486BCF9120E7ED03005A074D /* DrugCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486BCF9020E7ED03005A074D /* DrugCollectionViewController.swift */; };
+		486BCF9320E7EE2C005A074D /* DrugCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486BCF9220E7EE2C005A074D /* DrugCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		4862066B20DD48930013546C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4862067220DD48D10013546C /* KirkeDrugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KirkeDrugTests.swift; sourceTree = "<group>"; };
 		4862067420DD4C000013546C /* Drug_Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Drug_Data.plist; sourceTree = "<group>"; };
+		486BCF9020E7ED03005A074D /* DrugCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCollectionViewController.swift; sourceTree = "<group>"; };
+		486BCF9220E7EE2C005A074D /* DrugCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +88,11 @@
 		485E3DFE20DC79D90090BD2B /* KirkeCabinate */ = {
 			isa = PBXGroup;
 			children = (
+				485E3E0320DC79D90090BD2B /* Main.storyboard */,
 				4862066020DD34B30013546C /* Models */,
 				4862065F20DD34A90013546C /* Views */,
 				4862065E20DD349E0013546C /* Controllers */,
 				485E3DFF20DC79D90090BD2B /* AppDelegate.swift */,
-				485E3E0320DC79D90090BD2B /* Main.storyboard */,
 				485E3E0620DC79DB0090BD2B /* Assets.xcassets */,
 				485E3E0820DC79DB0090BD2B /* LaunchScreen.storyboard */,
 				485E3E0B20DC79DB0090BD2B /* Info.plist */,
@@ -99,6 +103,8 @@
 		4862065E20DD349E0013546C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				486BCF9020E7ED03005A074D /* DrugCollectionViewController.swift */,
+				486BCF9220E7EE2C005A074D /* DrugCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -234,7 +240,9 @@
 			files = (
 				4840E75420E4780C00005A9C /* Pill.swift in Sources */,
 				485E3E0020DC79D90090BD2B /* AppDelegate.swift in Sources */,
+				486BCF9120E7ED03005A074D /* DrugCollectionViewController.swift in Sources */,
 				4862066220DD35160013546C /* Drug.swift in Sources */,
+				486BCF9320E7EE2C005A074D /* DrugCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

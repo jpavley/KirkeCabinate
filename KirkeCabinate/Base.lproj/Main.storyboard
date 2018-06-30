@@ -11,19 +11,19 @@
         <!--Master View Controller-->
         <scene sceneID="lDm-wA-W68">
             <objects>
-                <collectionViewController id="rsw-aK-U0r" userLabel="Master View Controller" sceneMemberID="viewController">
+                <collectionViewController id="rsw-aK-U0r" userLabel="Master View Controller" customClass="DrugCollectionViewController" customModule="KirkeCabinate" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="q2u-3t-tIq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rQ5-1D-zym">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="240" height="270"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DrugCell" id="FQI-l9-ba5">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DrugCell" id="FQI-l9-ba5" customClass="DrugCollectionViewCell" customModule="KirkeCabinate" customModuleProvider="target">
                                 <rect key="frame" x="40" y="0.0" width="240" height="270"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -38,7 +38,7 @@
                                                 <constraint firstAttribute="height" constant="240" id="B1E-Sj-8ta"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXX-XI-7fq">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXX-XI-7fq">
                                             <rect key="frame" x="0.0" y="250.5" width="240" height="19.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
@@ -55,6 +55,10 @@
                                     <constraint firstItem="Z3q-bs-9UY" firstAttribute="leading" secondItem="FQI-l9-ba5" secondAttribute="leading" id="rwF-ug-hgy"/>
                                 </constraints>
                                 <size key="customSize" width="240" height="270"/>
+                                <connections>
+                                    <outlet property="pillLabel" destination="oXX-XI-7fq" id="cYQ-wV-xuu"/>
+                                    <outlet property="pillView" destination="Z3q-bs-9UY" id="gZj-aK-I4F"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
