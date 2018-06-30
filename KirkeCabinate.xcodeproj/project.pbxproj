@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4840E75420E4780C00005A9C /* Pill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4840E75320E4780C00005A9C /* Pill.swift */; };
 		485E3E0020DC79D90090BD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485E3DFF20DC79D90090BD2B /* AppDelegate.swift */; };
 		485E3E0520DC79D90090BD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 485E3E0320DC79D90090BD2B /* Main.storyboard */; };
 		485E3E0720DC79DB0090BD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 485E3E0620DC79DB0090BD2B /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4840E75320E4780C00005A9C /* Pill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pill.swift; sourceTree = "<group>"; };
 		485E3DFC20DC79D90090BD2B /* KirkeCabinate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KirkeCabinate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		485E3DFF20DC79D90090BD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		485E3E0420DC79D90090BD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		4862065F20DD34A90013546C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4840E75320E4780C00005A9C /* Pill.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4840E75420E4780C00005A9C /* Pill.swift in Sources */,
 				485E3E0020DC79D90090BD2B /* AppDelegate.swift in Sources */,
 				4862066220DD35160013546C /* Drug.swift in Sources */,
 			);
