@@ -32,5 +32,55 @@
 		<key>form</key>
 		<integer>3</integer>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>Mana Potion</string>
+		<key>units</key>
+		<integer>1</integer>
+		<key>strength</key>
+		<integer>2</integer>
+		<key>form</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Draenic Agility</string>
+		<key>units</key>
+		<integer>2</integer>
+		<key>strength</key>
+		<integer>100</integer>
+		<key>form</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Smuggled Tonic</string>
+		<key>units</key>
+		<integer>1</integer>
+		<key>strength</key>
+		<integer>123</integer>
+		<key>form</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Darkwater</string>
+		<key>units</key>
+		<integer>1</integer>
+		<key>strength</key>
+		<integer>333</integer>
+		<key>form</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Virmen&apos;s Bite</string>
+		<key>units</key>
+		<integer>2</integer>
+		<key>strength</key>
+		<integer>400</integer>
+		<key>form</key>
+		<integer>1</integer>
+	</dict>
 </array>
 </plist>

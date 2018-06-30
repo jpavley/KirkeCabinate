@@ -35,7 +35,7 @@ class KirkeDrugTests: XCTestCase {
         
         let drugsUT = Drug.loadDrugs()
         XCTAssertNotNil(drugsUT, "Drug list was not loaded")
-        XCTAssertEqual(drugsUT.count, 3, "Drug data is missing from list")
+        XCTAssertGreaterThan(drugsUT.count, 3, "Drug data is missing from list")
     }
     
     func testLoadedDrugsHaveData() {
