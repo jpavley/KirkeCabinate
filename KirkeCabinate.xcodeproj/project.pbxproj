@@ -19,6 +19,7 @@
 		4862067520DD4C000013546C /* Drug_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4862067420DD4C000013546C /* Drug_Data.plist */; };
 		486BCF9120E7ED03005A074D /* DrugCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486BCF9020E7ED03005A074D /* DrugCollectionViewController.swift */; };
 		486BCF9320E7EE2C005A074D /* DrugCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486BCF9220E7EE2C005A074D /* DrugCollectionViewCell.swift */; };
+		486BCF9620E84148005A074D /* Screen Shot 2018-06-30 at 6.51.40 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 486BCF9520E84148005A074D /* Screen Shot 2018-06-30 at 6.51.40 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4862067420DD4C000013546C /* Drug_Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Drug_Data.plist; sourceTree = "<group>"; };
 		486BCF9020E7ED03005A074D /* DrugCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCollectionViewController.swift; sourceTree = "<group>"; };
 		486BCF9220E7EE2C005A074D /* DrugCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCollectionViewCell.swift; sourceTree = "<group>"; };
+		486BCF9520E84148005A074D /* Screen Shot 2018-06-30 at 6.51.40 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-06-30 at 6.51.40 PM.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		485E3DFE20DC79D90090BD2B /* KirkeCabinate */ = {
 			isa = PBXGroup;
 			children = (
+				486BCF9420E84123005A074D /* Screen Shots */,
 				485E3E0320DC79D90090BD2B /* Main.storyboard */,
 				4862066020DD34B30013546C /* Models */,
 				4862065F20DD34A90013546C /* Views */,
@@ -134,6 +137,14 @@
 				4862066B20DD48930013546C /* Info.plist */,
 			);
 			path = KirkeCabinateTests;
+			sourceTree = "<group>";
+		};
+		486BCF9420E84123005A074D /* Screen Shots */ = {
+			isa = PBXGroup;
+			children = (
+				486BCF9520E84148005A074D /* Screen Shot 2018-06-30 at 6.51.40 PM.png */,
+			);
+			path = "Screen Shots";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 			files = (
 				4862067520DD4C000013546C /* Drug_Data.plist in Resources */,
 				485E3E0A20DC79DB0090BD2B /* LaunchScreen.storyboard in Resources */,
+				486BCF9620E84148005A074D /* Screen Shot 2018-06-30 at 6.51.40 PM.png in Resources */,
 				485E3E0720DC79DB0090BD2B /* Assets.xcassets in Resources */,
 				485E3E0520DC79D90090BD2B /* Main.storyboard in Resources */,
 			);
