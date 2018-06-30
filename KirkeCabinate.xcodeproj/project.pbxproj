@@ -20,6 +20,8 @@
 		486BCF9120E7ED03005A074D /* DrugCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486BCF9020E7ED03005A074D /* DrugCollectionViewController.swift */; };
 		486BCF9320E7EE2C005A074D /* DrugCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486BCF9220E7EE2C005A074D /* DrugCollectionViewCell.swift */; };
 		486BCF9620E84148005A074D /* Screen Shot 2018-06-30 at 6.51.40 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 486BCF9520E84148005A074D /* Screen Shot 2018-06-30 at 6.51.40 PM.png */; };
+		486BCF9820E84270005A074D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 486BCF9720E84270005A074D /* LICENSE */; };
+		486BCF9A20E84277005A074D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 486BCF9920E84277005A074D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		486BCF9020E7ED03005A074D /* DrugCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCollectionViewController.swift; sourceTree = "<group>"; };
 		486BCF9220E7EE2C005A074D /* DrugCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugCollectionViewCell.swift; sourceTree = "<group>"; };
 		486BCF9520E84148005A074D /* Screen Shot 2018-06-30 at 6.51.40 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-06-30 at 6.51.40 PM.png"; sourceTree = "<group>"; };
+		486BCF9720E84270005A074D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		486BCF9920E84277005A074D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		485E3DFE20DC79D90090BD2B /* KirkeCabinate */ = {
 			isa = PBXGroup;
 			children = (
+				486BCF9920E84277005A074D /* README.md */,
+				486BCF9720E84270005A074D /* LICENSE */,
 				486BCF9420E84123005A074D /* Screen Shots */,
 				485E3E0320DC79D90090BD2B /* Main.storyboard */,
 				4862066020DD34B30013546C /* Models */,
@@ -228,8 +234,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486BCF9820E84270005A074D /* LICENSE in Resources */,
 				4862067520DD4C000013546C /* Drug_Data.plist in Resources */,
 				485E3E0A20DC79DB0090BD2B /* LaunchScreen.storyboard in Resources */,
+				486BCF9A20E84277005A074D /* README.md in Resources */,
 				486BCF9620E84148005A074D /* Screen Shot 2018-06-30 at 6.51.40 PM.png in Resources */,
 				485E3E0720DC79DB0090BD2B /* Assets.xcassets in Resources */,
 				485E3E0520DC79D90090BD2B /* Main.storyboard in Resources */,
